@@ -13,6 +13,34 @@ ssh username@your-vm-ip
 ```bash
 sudo apt update
 ```
+### 2. Install Nginx
+Install Nginx using the following command:
+```bash
+sudo apt install nginx
+```
+### 3. Start Nginx
+Start the Nginx service:
+```bash
+sudo systemctl start nginx
+```
+### 4. Enable Nginx to start on boot
+Start the Nginx service:
+```bash
+sudo systemctl enable nginx
+```
+
+### 5. Check Nginx Status
+Verify that Nginx is running without any errors:
+```bash
+sudo systemctl status nginx
+```
+### 6. Allow HTTP and HTTPS traffic in the firewall
+Ensure that the firewall allows HTTP (port 80) and HTTPS (port 443) traffic:
+```bash
+sudo ufw allow 80
+sudo ufw allow 443
+sudo ufw enable
+```
 
 ### Install Certbot:
 Certbot is a tool that simplifies the process of obtaining and renewing SSL certificates.
