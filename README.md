@@ -54,6 +54,11 @@ Before obtaining the certificate, you might need to stop Nginx temporarily:
 sudo service nginx stop
 ```
 
+### DNS Entry 
+An A record with your_domain pointing to your server’s public IP address.
+An CNAME record with *.your_domain pointing to your server’s public IP address for multiple routing rules.
+
+
 ### Obtain SSL Certificate:
 Run Certbot to obtain the SSL certificate. Make sure to replace yourdomain.com with your actual domain:
  ```bash
